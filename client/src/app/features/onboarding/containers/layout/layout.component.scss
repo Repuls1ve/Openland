@@ -1,0 +1,43 @@
+@use "src/assets/scss/breakpoints";
+
+$topbar-height: 72px;
+
+.onboarding-container {
+  height: 100%;
+
+  .topbar-container {
+    height: $topbar-height;
+  }
+
+  .content-container {
+    height: calc(100% - $topbar-height * 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content-wrapper {
+      height: 100%;
+      width: 20%;
+
+      @include breakpoints.laptop {
+        width: 30%;
+      }
+
+      @include breakpoints.tablet {
+        width: 45%;
+      }
+
+      @include breakpoints.tablet-sm {
+        width: 60%;
+      }
+
+      @include breakpoints.mobile {
+        width: 90%;
+      }
+    }
+
+    &.full-height {
+      height: 100%;
+    }
+  }
+}

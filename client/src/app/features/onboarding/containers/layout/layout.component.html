@@ -1,0 +1,10 @@
+<div class="onboarding-container">
+  <div class="topbar-container" *ngIf="topbarLayout">
+    <ng-content select="[topbar]"></ng-content>
+  </div>
+  <div class="content-container" [class.full-height]="!topbarLayout">
+    <div class="content-wrapper">
+      <ng-content select="[content]"></ng-content>
+    </div>
+  </div>
+</div>
