@@ -1,0 +1,23 @@
+@use "src/assets/scss/colors";
+@use "src/assets/scss/typography";
+
+:host {
+  width: auto;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 15px;
+  padding: 8px 24px;
+  border: none;
+
+  &.primary {
+    background-color: colors.$primary;
+    color: colors.$foreground-inverted;
+    font-weight: typography.$semi-bold;
+  }
+
+  &.secondary {
+    background-color: colors.$background-secondary;
+    color: colors.$foreground-secondary;
+    font-weight: typography.$semi-bold;
+  }
+}
