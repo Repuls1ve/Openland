@@ -1,0 +1,6 @@
+<div class="code-input">
+  <shared-code-input-item
+  *ngFor="let index of length | times"
+  (keyInputSuccess)="focusNext(index)"
+  ></shared-code-input-item>
+</div>

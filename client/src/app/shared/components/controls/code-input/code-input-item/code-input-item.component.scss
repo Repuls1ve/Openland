@@ -1,0 +1,23 @@
+@use "src/assets/scss/typography";
+@use "src/assets/scss/colors";
+
+.input-item {
+  width: 47px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: colors.$background-tertiary, $alpha: 0.24);
+  border-radius: 8px;
+  font-family: typography.$font-secondary;
+  font-weight: typography.$bold;
+  font-size: 24px;
+  border: none;
+  text-align: center;
+  caret-color: transparent;
+
+  &:focus {
+    background-color: rgba($color: colors.$background-tertiary, $alpha: 0.5);
+    outline: none;
+  }
+}

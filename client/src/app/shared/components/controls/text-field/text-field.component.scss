@@ -1,0 +1,18 @@
+@use "src/assets/scss/colors";
+@use "src/assets/scss/typography";
+
+:host {
+  padding: 8px 16px;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.24px;
+  background-color: rgba($color: colors.$background-tertiary, $alpha: 0.24);
+  color: colors.$foreground-tertiary;
+  border-radius: 8px;
+  border: none;
+
+  &::placeholder {
+    text-transform: capitalize;
+    color: colors.$foreground-tertiary;
+  }
+}
